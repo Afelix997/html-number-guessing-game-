@@ -7,11 +7,11 @@ let randomNumber = function() {
     
     var userInput = document.getElementById("userInput").value;
     if( userInput == num ){
-        result= 'CORRECT!'
+        result= `The guess of ${userInput} is CORRECT!`
     } else if( userInput<num){
-        result= 'Too Low'
+        result= `The guess of ${userInput} is Too Low`
     } else if( userInput>num){
-        result= 'Too High'
+        result= `The guess of ${userInput} is Too High`
     }
     document.getElementById("demo").innerHTML = result;
 }
